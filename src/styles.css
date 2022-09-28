@@ -62,4 +62,14 @@ footer {
   text-align: center;
   padding: 1rem;
   font-size: 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.4s ease-in-out;
+}
+
+footer:hover {
+  background-color: rgb(199, 199, 199);
+}
+
+footer:active {
+  font-size: 1.4rem;
 }
