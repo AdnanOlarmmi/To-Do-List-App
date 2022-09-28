@@ -1,11 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wbpack Exercise</title>
-</head>
-<body>
-    <h1>Hello Webpack!!!</h1>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+		/>
+		<title>ToDo List</title>
+	</head>
+	<body>
+		<header>
+			<div class="to-do__title flex-row border-bottom">
+				<h3>Today's To Do</h3>
+				<span class="material-symbols-outlined"> autorenew </span>
+			</div>
+			<div class="to-do__edit flex-row border-bottom">
+				<input
+					type="text"
+					name=""
+					id="to-do__input"
+					placeholder="Add to your list..."
+				/>
+				<span class="material-symbols-outlined"> add_task </span>
+			</div>
+		</header>
+		<main class="to-do__items">
+			<section class="to-do__item flex-row border-bottom">
+				<input type="checkbox" name="" id="" />
+				<p>Wash the dishes</p>
+				<span class="to-do__item-icons">
+					<span class="material-symbols-outlined"> delete </span>
+					<span class="material-symbols-outlined"> edit_note </span>
+				</span>
+			</section>
+		</main>
+		<footer>Clear all completed</footer>
+	</body>
 </html>
