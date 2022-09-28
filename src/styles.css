@@ -9,6 +9,7 @@
 
 body {
   width: 90vw;
+  max-width: 500px;
   height: max-content;
   margin: auto;
   position: fixed;
@@ -16,6 +17,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   box-shadow: 0.1rem 0.1rem 10px rgb(108, 108, 108);
+  border-radius: 5px;
 }
 
 .material-symbols-outlined {
@@ -27,6 +29,7 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 1rem 1rem;
+  gap: 0.7rem;
 }
 
 .flex-column {
@@ -37,20 +40,22 @@ body {
 input {
   border: transparent;
   outline-width: 0;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-style: italic;
+  padding-right: 6rem;
 }
 
 input::placeholder {
   color: rgb(198, 198, 198);
+  transition: color 0.4s ease-in;
+  padding-right: 150%;
 }
 
-.to-do__item {
-  justify-content: stretch;
-  gap: 0.7rem;
+.inputError::placeholder {
+  color: rgb(255, 113, 113);
 }
 
-.to-do__item .to-do__item-icons {
+.to-do__task .to-do__item-icons {
   margin-left: auto;
 }
 
@@ -58,8 +63,23 @@ input::placeholder {
   border-bottom: 1px solid rgb(185, 185, 185);
 }
 
+.hide {
+  visibility: hidden;
+  position: absolute;
+}
+
 footer {
   text-align: center;
   padding: 1rem;
   font-size: 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.4s ease-in-out;
+}
+
+footer:hover {
+  background-color: rgb(199, 199, 199);
+}
+
+footer:active {
+  font-size: 1.4rem;
 }
