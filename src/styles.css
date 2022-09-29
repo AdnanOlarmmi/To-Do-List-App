@@ -37,18 +37,21 @@ body {
   flex-direction: column;
 }
 
-input {
+.to-do__add {
+  justify-content: space-between;
+}
+
+.to-do__input {
   border: transparent;
   outline-width: 0;
   font-size: 1rem;
   font-style: italic;
-  padding-right: 6rem;
+  width: 65vw;
 }
 
 input::placeholder {
   color: rgb(198, 198, 198);
   transition: color 0.4s ease-in;
-  padding-right: 150%;
 }
 
 .inputError::placeholder {
