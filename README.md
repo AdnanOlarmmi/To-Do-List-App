@@ -13,10 +13,7 @@ I also added some functionality to my application to make it interactive. The us
 
 > Learning objectives
 
-complete-website-with-nav
-- To Use webpack to bundle JavaScript.
-- To Learn how to use proper ES6 syntax.
-- To Use ES6 modules to write modular JavaScript.
+
 
 
 ## Built With
