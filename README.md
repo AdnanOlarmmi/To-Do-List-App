@@ -1,8 +1,9 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# To Do list: Add, Remove & Edit.
+# To Do list: Interactive list.
 In this project, I built a simple HTML list of To Do tasks. The list was styled according to the specifications listed in this lesson. This simple web page was built using webpack and served by a webpack dev server.
 and also I implemented the CRUD (create, read, update, delete) methods. All the elements of the user interface is fully functional and my application will is complete.
+I also added some functionality to my application to make it interactive. The user will be able to mark task completion by selecting the corresponding checkbox (or undo it by unchecking the checkbox). The updated tasks list will be stored in local storage.
 
 - Here is the page preview
 

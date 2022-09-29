@@ -1,4 +1,5 @@
 import toDoItemsArray from './toDoItemsArray.js';
+import checked from './checked.js';
 
 const toDoItemsEl = document.querySelector('.to-do__items');
 const editTaskBtnEl = document.getElementsByClassName('editTaskBtn');
@@ -15,7 +16,7 @@ const renderToDoItems = () => {
     <span class="material-symbols-outlined to-do__addTask">add_task</span>
     </div>
     <div class="flex-row to-do__task">
-    <input type="checkbox" ${elem.completed && 'checked'}/>
+    <input class='checkbox' type="checkbox" ${elem.completed && 'checked'}/>
     <p class='description'>${elem.description}</p>
     <span class="to-do__item-icons">
     <span class="material-symbols-outlined dltTaskBtn" id=${index}>delete</span>
@@ -66,6 +67,7 @@ const renderToDoItems = () => {
   toDoItemsEl.innerHTML = markup;
   removeTask();
   editTask();
+  checked();
 };
 
 export default renderToDoItems;
