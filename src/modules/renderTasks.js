@@ -8,10 +8,12 @@ const renderToDoItems = () => {
 
   toDoItemsArray.forEach((elem, index) => {
     markup += `<section class="to-do__item  border-bottom" id=${index}>
-    <div class="to-do__edit hide flex-row border-bottom">
-    <input type="text" class="to-do__input" placeholder="Input a task or use the delete button..."/>
+    <form class="to-do__edit hide flex-row border-bottom">
+    <input type="text" class="to-do__input" placeholder="Input a task or use delete button..."/>
+    <button>
     <span class="material-symbols-outlined to-do__addTask">add_task</span>
-    </div>
+    </button>
+    </form>
     <div class="flex-row to-do__task">
     <input class='checkbox' type="checkbox" ${elem.completed && 'checked'}/>
     <p class='description'>${elem.description}</p>

@@ -2,12 +2,13 @@ import renderToDoItems from './renderTasks.js';
 import toDoItemsArray from './toDoItemsArray.js';
 import init from './init.js';
 
-const addElBtn = document.querySelector('.to-do__addTask');
 const todoinputEl = document.querySelector('.to-do__input');
 const input = document.querySelector('input');
+const addForm = document.querySelector('.to-do__add');
 
 const addTask = () => {
-  addElBtn.addEventListener('click', () => {
+  addForm.addEventListener('submit', (e) => {
+    e.preventDefault();
     const newTask = todoinputEl.value;
     if (newTask) {
       const newTodo = {

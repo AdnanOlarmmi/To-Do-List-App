@@ -17,7 +17,8 @@ const init = () => {
         toDoTask[taskID].classList.add('hide');
         currentTask.classList.remove('hide');
         currentTaskEdit.value = toDoItemsArray[taskID].description;
-        currentTask.childNodes[3].addEventListener('click', () => {
+        currentTask.childNodes[3].addEventListener('click', (e) => {
+          e.preventDefault();
           const editedTask = currentTask.childNodes[1].value;
           if (editedTask) {
             toDoItemsArray[taskID].description = editedTask;

@@ -1,5 +1,6 @@
 import renderToDoItems from './renderTasks.js';
 import toDoItemsArray from './toDoItemsArray.js';
+import init from './init.js';
 
 const footer = document.querySelector('footer');
 
@@ -11,6 +12,7 @@ const clearCompleted = () => {
 
     localStorage.setItem('toDoItemsArray', JSON.stringify(toDoItemsArray));
     renderToDoItems();
+    init();
   });
 };
 
