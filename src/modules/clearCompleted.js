@@ -5,12 +5,10 @@ const footer = document.querySelector('footer');
 
 const clearCompleted = () => {
   footer.addEventListener('click', () => {
-    toDoItemsArray.forEach((item) => {
-      if (item.completed) {
-        const itemIndex = toDoItemsArray.indexOf(item);
-        toDoItemsArray.splice(itemIndex, 1);
-      }
-    });
+    const nonCompletedTasks = toDoItemsArray.filter((item) => item.completed === false);
+
+    toDoItemsArray.splice(0, toDoItemsArray.length, ...nonCompletedTasks);
+
     localStorage.setItem('toDoItemsArray', JSON.stringify(toDoItemsArray));
     renderToDoItems();
   });
