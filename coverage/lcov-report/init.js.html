@@ -23,9 +23,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">11.11% </span>
+                <span class="strong">33.33% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>4/36</span>
+                <span class='fraction'>12/36</span>
             </div>
         
             
@@ -37,16 +37,16 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">33.33% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/9</span>
+                <span class='fraction'>3/9</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">11.11% </span>
+                <span class="strong">33.33% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>4/36</span>
+                <span class='fraction'>12/36</span>
             </div>
         
             
@@ -126,9 +126,9 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -156,9 +156,9 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -168,8 +168,8 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -180,10 +180,10 @@ const editTaskBtnEl = document.getElementsByClassName('editTaskBtn');
 const editTaskEl = document.getElementsByClassName('to-do__edit');
 const toDoTask = document.getElementsByClassName('to-do__task');
 &nbsp;
-const init = <span class="fstat-no" title="function not covered" >()</span> =&gt; {
-  const editTask = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >()</span> =&gt; {</span>
-    const editTaskBtns = <span class="cstat-no" title="statement not covered" >[...editTaskBtnEl];</span>
-<span class="cstat-no" title="statement not covered" >    editTaskBtns.forEach(<span class="fstat-no" title="function not covered" >(i</span>tem) =&gt; {</span>
+const init = () =&gt; {
+  const editTask = () =&gt; {
+    const editTaskBtns = [...editTaskBtnEl];
+    editTaskBtns.forEach(<span class="fstat-no" title="function not covered" >(i</span>tem) =&gt; {
 <span class="cstat-no" title="statement not covered" >      item.addEventListener('click', <span class="fstat-no" title="function not covered" >()</span> =&gt; {</span>
         const taskID = <span class="cstat-no" title="statement not covered" >item.id;</span>
         const editTaskEls = <span class="cstat-no" title="statement not covered" >[...editTaskEl];</span>
@@ -211,9 +211,9 @@ const init = <span class="fstat-no" title="function not covered" >()</span> =&gt
     });
   };
 &nbsp;
-  const removeTask = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >()</span> =&gt; {</span>
-    const removeBtnsEl = <span class="cstat-no" title="statement not covered" >[...document.getElementsByClassName('dltTaskBtn')];</span>
-<span class="cstat-no" title="statement not covered" >    removeBtnsEl.forEach(<span class="fstat-no" title="function not covered" >(i</span>tem) =&gt; {</span>
+  const removeTask = () =&gt; {
+    const removeBtnsEl = [...document.getElementsByClassName('dltTaskBtn')];
+    removeBtnsEl.forEach(<span class="fstat-no" title="function not covered" >(i</span>tem) =&gt; {
 <span class="cstat-no" title="statement not covered" >      item.addEventListener('click', <span class="fstat-no" title="function not covered" >(e</span>) =&gt; {</span>
 <span class="cstat-no" title="statement not covered" >        toDoItemsArray.splice(e.target.id, 1);</span>
 <span class="cstat-no" title="statement not covered" >        localStorage.setItem('toDoItemsArray', JSON.stringify(toDoItemsArray));</span>
@@ -223,8 +223,8 @@ const init = <span class="fstat-no" title="function not covered" >()</span> =&gt
     });
   };
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  removeTask();</span>
-<span class="cstat-no" title="statement not covered" >  editTask();</span>
+  removeTask();
+  editTask();
 };
 &nbsp;
 export default init;
@@ -235,7 +235,7 @@ export default init;
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2022-10-06T12:29:11.312Z
+                at 2022-10-06T14:31:24.491Z
             </div>
         <script src="prettify.js"></script>
         <script>

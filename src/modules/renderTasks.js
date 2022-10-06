@@ -1,5 +1,5 @@
 import toDoItemsArray from './toDoItemsArray.js';
-import checked from './checked.js';
+import checked from './updateCompleted.js';
 
 const toDoItemsEl = document.querySelector('.to-do__items');
 

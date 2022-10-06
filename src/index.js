@@ -6,6 +6,7 @@ import clearAll from './modules/clearAll.js';
 import init from './modules/init.js';
 import toDoItemsArray from './modules/toDoItemsArray.js';
 import removeT from './modules/remove.js';
+const footer = document.querySelector('footer');
 
 const todoinputEl = document.querySelector('.to-do__input');
 const addForm = document.querySelector('.to-do__add');
@@ -24,7 +25,9 @@ addForm.addEventListener('submit', (e) => {
 });
 
 renderToDoItems();
-clearCompleted();
+footer.addEventListener('click', () => {
+    clearCompleted()
+updateTasks()});
 clearAll();
 
 const removeBtnsEl = [...document.getElementsByClassName('dltTaskBtn')];
