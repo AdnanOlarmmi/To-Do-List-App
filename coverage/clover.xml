@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1665066684540" clover="3.2.0">
-  <project timestamp="1665066684540" name="All files">
-    <metrics statements="63" coveredstatements="31" conditionals="8" coveredconditionals="3" methods="18" coveredmethods="9" elements="89" coveredelements="43" complexity="0" loc="63" ncloc="63" packages="1" files="8" classes="8"/>
+<coverage generated="1665066938204" clover="3.2.0">
+  <project timestamp="1665066938205" name="All files">
+    <metrics statements="62" coveredstatements="30" conditionals="8" coveredconditionals="3" methods="18" coveredmethods="9" elements="88" coveredelements="42" complexity="0" loc="62" ncloc="62" packages="1" files="8" classes="8"/>
     <file name="addTask.js" path="C:\Users\USER\Documents\New Projects\Microverse\Module 2\To-Do-List-App\src\modules\addTask.js">
       <metrics statements="8" coveredstatements="5" conditionals="2" coveredconditionals="1" methods="2" coveredmethods="1"/>
       <line num="3" count="2" type="stmt"/>
@@ -14,12 +14,11 @@
       <line num="14" count="0" type="stmt"/>
     </file>
     <file name="clearCompleted.js" path="C:\Users\USER\Documents\New Projects\Microverse\Module 2\To-Do-List-App\src\modules\clearCompleted.js">
-      <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-      <line num="5" count="1" type="stmt"/>
+      <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <line num="4" count="1" type="stmt"/>
+      <line num="5" count="2" type="stmt"/>
+      <line num="6" count="1" type="stmt"/>
       <line num="7" count="1" type="stmt"/>
-      <line num="8" count="2" type="stmt"/>
-      <line num="9" count="1" type="stmt"/>
-      <line num="10" count="1" type="stmt"/>
     </file>
     <file name="edit.js" path="C:\Users\USER\Documents\New Projects\Microverse\Module 2\To-Do-List-App\src\modules\edit.js">
       <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>

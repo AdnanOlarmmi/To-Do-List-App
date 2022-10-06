@@ -5,22 +5,21 @@ import editT from './src/modules/edit.js';
 import completed from './src/modules/updateCompleted.js';
 
 describe('test edit and clearcompleted', () => {
-    test('test edit task function', () => {
-        addTask('first task');
-        addTask('second task');
-        editT('changed', 0)
-        expect(toDoItemsArray[0].description).toBe('changed');
-      });
-    
-      test('test edit task function', () => {
-        completed(0, true)
-        expect(toDoItemsArray[0].description).toBeTruthy;
-      });  
-
-    test('test clear completed task function', () => {
-      toDoItemsArray[0].completed = true;
-      clearCompleted();
-      expect(toDoItemsArray).toHaveLength(1);
-    });
-  
+  test('test edit task function', () => {
+    addTask('first task');
+    addTask('second task');
+    editT('changed', 0);
+    expect(toDoItemsArray[0].description).toBe('changed');
   });
+
+  test('test edit task function', () => {
+    completed(0, true);
+    expect(toDoItemsArray[0].description).toBe(true);
+  });
+
+  test('test clear completed task function', () => {
+    toDoItemsArray[0].completed = true;
+    clearCompleted();
+    expect(toDoItemsArray).toHaveLength(1);
+  });
+});
