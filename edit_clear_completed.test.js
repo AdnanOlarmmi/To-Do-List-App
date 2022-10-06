@@ -12,7 +12,7 @@ describe('test edit and clearcompleted', () => {
     expect(toDoItemsArray[0].description).toBe('changed');
   });
 
-  test('test edit task function', () => {
+  test('test completed function', () => {
     completed(0, true);
     expect(toDoItemsArray[0].description).toBe(true);
   });
