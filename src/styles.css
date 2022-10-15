@@ -7,16 +7,23 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.rotate {
+  transition: transform 2s ease-in-out;
+  transform: rotate(360deg);
+  color: red;
+}
+
 body {
   width: 90vw;
   max-width: 500px;
   height: max-content;
+  max-height: 90vh;
   margin: auto;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  box-shadow: 0.1rem 0.1rem 10px rgb(108, 108, 108);
+  box-shadow: 0.05rem 0.05rem 5px rgb(108, 108, 108);
   border-radius: 5px;
 }
 
@@ -49,13 +56,25 @@ body {
   width: 65vw;
 }
 
+main {
+  overflow-y: scroll;
+  height: max-content;
+  max-height: 57vh;
+}
+
+button {
+  border: transparent;
+  background-color: transparent;
+}
+
 input::placeholder {
   color: rgb(198, 198, 198);
-  transition: color 0.4s ease-in;
+  transition: all 2s ease-in-out;
 }
 
 .inputError::placeholder {
-  color: rgb(255, 113, 113);
+  color: rgb(241, 30, 30);
+  font-size: large;
 }
 
 .to-do__task .to-do__item-icons {

@@ -8,7 +8,7 @@ I also added some functionality to my application to make it interactive. The us
 - Here is the page preview
 
 <p>
- <img src="../preview.gif" />
+ <img src="./preview.gif" />
 </p>
 
 > Learning objectives
