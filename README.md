@@ -79,7 +79,7 @@ In order to run this project you need:
 
 - A web browser to view output e.g [Google Chrome](https://www.google.com/chrome/).
 - An IDE e.g [Visual studio code](https://code.visualstudio.com/).
-- A terminal.
+- [A terminal](https://code.visualstudio.com/docs/terminal/basics).
 
 ### Setup
 
