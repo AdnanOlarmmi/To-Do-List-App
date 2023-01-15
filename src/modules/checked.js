@@ -1,23 +1,17 @@
+import renderToDoItems from './renderTasks.js';
 import toDoItemsArray from './toDoItemsArray.js';
 
-const checkedBoxEls = document.getElementsByClassName('checkbox');
+const checked = (itmId) => {
+  const { completed } = toDoItemsArray[itmId];
 
-const checked = () => {
-  const checkedBoxElsArray = [...checkedBoxEls];
-  checkedBoxElsArray.forEach((item) => {
-    item.addEventListener('click', () => {
-      const itmId = item.parentNode.parentNode.id;
-      const { completed } = toDoItemsArray[itmId];
+  if (completed) {
+    toDoItemsArray[itmId].completed = false;
+  } else {
+    toDoItemsArray[itmId].completed = true;
+  }
 
-      if (completed) {
-        toDoItemsArray[itmId].completed = false;
-      } else {
-        toDoItemsArray[itmId].completed = true;
-      }
-
-      localStorage.setItem('toDoItemsArray', JSON.stringify(toDoItemsArray));
-    });
-  });
+  localStorage.setItem('toDoItemsArray', JSON.stringify(toDoItemsArray));
+  renderToDoItems();
 };
 
 export default checked;

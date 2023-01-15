@@ -6,6 +6,7 @@ import clearAll from './modules/clearAll.js';
 import removeTask from './modules/removeTask.js';
 import toDoItemsArray from './modules/toDoItemsArray.js';
 import editTask from './modules/editTask.js';
+import checked from './modules/checked.js';
 
 const clearAllEl = document.querySelector('.clearAll');
 const todoItemsEl = document.querySelector('.to-do__items');
@@ -38,6 +39,10 @@ todoItemsEl.addEventListener('click', (e) => {
       e.preventDefault();
       editTask(currentDescription, taskId);
     });
+  } else if (e.target.matches('.checkbox')) {
+    const checkedId = e.target.parentNode.parentNode.id;
+
+    checked(checkedId);
   }
 });
 
@@ -46,4 +51,3 @@ footerEl.addEventListener('click', () => {
 });
 
 renderToDoItems();
-clearCompleted();
