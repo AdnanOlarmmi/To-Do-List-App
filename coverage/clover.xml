@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1673889100661" clover="3.2.0">
+  <project timestamp="1673889100661" name="All files">
+    <metrics statements="41" coveredstatements="30" conditionals="12" coveredconditionals="8" methods="11" coveredmethods="8" elements="64" coveredelements="46" complexity="0" loc="41" ncloc="41" packages="1" files="8" classes="8"/>
+    <file name="addTask.js" path="C:\Users\USER\Documents\New Projects\Microverse\Module 2\To-Do-List-App\src\modules\addTask.js">
+      <metrics statements="9" coveredstatements="6" conditionals="2" coveredconditionals="1" methods="2" coveredmethods="1"/>
+      <line num="4" count="2" type="stmt"/>
+      <line num="5" count="2" type="stmt"/>
+      <line num="6" count="2" type="cond" truecount="1" falsecount="1"/>
+      <line num="7" count="2" type="stmt"/>
+      <line num="11" count="2" type="stmt"/>
+      <line num="12" count="2" type="stmt"/>
+      <line num="14" count="0" type="stmt"/>
+      <line num="15" count="0" type="stmt"/>
+      <line num="16" count="0" type="stmt"/>
+    </file>
+    <file name="checked.js" path="C:\Users\USER\Documents\New Projects\Microverse\Module 2\To-Do-List-App\src\modules\checked.js">
+      <metrics statements="7" coveredstatements="6" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
+      <line num="4" count="1" type="stmt"/>
+      <line num="5" count="1" type="stmt"/>
+      <line num="7" count="1" type="cond" truecount="1" falsecount="1"/>
+      <line num="8" count="0" type="stmt"/>
+      <line num="10" count="1" type="stmt"/>
+      <line num="13" count="1" type="stmt"/>
+      <line num="14" count="1" type="stmt"/>
+    </file>
+    <file name="clearCompleted.js" path="C:\Users\USER\Documents\New Projects\Microverse\Module 2\To-Do-List-App\src\modules\clearCompleted.js">
+      <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <line num="4" count="1" type="stmt"/>
+      <line num="5" count="1" type="stmt"/>
+      <line num="6" count="1" type="stmt"/>
+      <line num="7" count="1" type="stmt"/>
+    </file>
+    <file name="editTask.js" path="C:\Users\USER\Documents\New Projects\Microverse\Module 2\To-Do-List-App\src\modules\editTask.js">
+      <metrics statements="8" coveredstatements="1" conditionals="2" coveredconditionals="0" methods="2" coveredmethods="0"/>
+      <line num="4" count="1" type="stmt"/>
+      <line num="5" count="0" type="stmt"/>
+      <line num="6" count="0" type="cond" truecount="0" falsecount="2"/>
+      <line num="7" count="0" type="stmt"/>
+      <line num="8" count="0" type="stmt"/>
+      <line num="10" count="0" type="stmt"/>
+      <line num="11" count="0" type="stmt"/>
+      <line num="12" count="0" type="stmt"/>
+    </file>
+    <file name="removeTask.js" path="C:\Users\USER\Documents\New Projects\Microverse\Module 2\To-Do-List-App\src\modules\removeTask.js">
+      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <line num="4" count="1" type="stmt"/>
+      <line num="5" count="1" type="stmt"/>
+      <line num="6" count="1" type="stmt"/>
+    </file>
+    <file name="renderTasks.js" path="C:\Users\USER\Documents\New Projects\Microverse\Module 2\To-Do-List-App\src\modules\renderTasks.js">
+      <metrics statements="6" coveredstatements="6" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
+      <line num="3" count="2" type="stmt"/>
+      <line num="5" count="2" type="stmt"/>
+      <line num="6" count="5" type="stmt"/>
+      <line num="8" count="5" type="stmt"/>
+      <line num="9" count="3" type="stmt"/>
+      <line num="27" count="5" type="stmt"/>
+    </file>
+    <file name="toDoItemsArray.js" path="C:\Users\USER\Documents\New Projects\Microverse\Module 2\To-Do-List-App\src\modules\toDoItemsArray.js">
+      <metrics statements="1" coveredstatements="1" conditionals="2" coveredconditionals="2" methods="0" coveredmethods="0"/>
+      <line num="1" count="2" type="cond" truecount="2" falsecount="0"/>
+    </file>
+    <file name="updateTasks.js" path="C:\Users\USER\Documents\New Projects\Microverse\Module 2\To-Do-List-App\src\modules\updateTasks.js">
+      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <line num="4" count="2" type="stmt"/>
+      <line num="5" count="4" type="stmt"/>
+      <line num="6" count="4" type="stmt"/>
+    </file>
+  </project>
+</coverage>
