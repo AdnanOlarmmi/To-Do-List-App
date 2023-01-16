@@ -3,7 +3,6 @@ import toDoItemsArray from '../src/modules/toDoItemsArray.js';
 import editTask from '../src/modules/editTask.js';
 import checked from '../src/modules/checked.js';
 import clearCompleted from '../src/modules/clearCompleted.js';
-import 'jest-localstorage-mock';
 
 describe('test edit and clear completed', () => {
   test('test edit task function', () => {

@@ -1,7 +1,6 @@
 import addTask from '../src/modules/addTask.js';
 import toDoItemsArray from '../src/modules/toDoItemsArray.js';
 import removeTask from '../src/modules/removeTask.js';
-import 'jest-localstorage-mock';
 
 describe('test addTask and removeTask', () => {
   test('test add task function', () => {
