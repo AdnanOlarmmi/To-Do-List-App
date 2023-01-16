@@ -1,5 +1,5 @@
 const path = require('path');
-//eslint-disable-next-line import/no-extraneous-dependencies
+//eslint-disable-next-line
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
