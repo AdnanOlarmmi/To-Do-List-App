@@ -140,8 +140,8 @@ You can deploy this project using: GitHub Pages,
 ## 🔭 Future Features <a name="future-features"></a>
 
 - [ ] **Implement button to switch sort type (ascending or descending).**
-- [ ] **Implement delete score feature.**
-- [ ] **Add different pages for different competitions.**
+- [ ] **Implement completed and not-completed routes for completed and non-completed tasks, respectively.**
+- [ ] **Add backend to store tasks.**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
