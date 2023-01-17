@@ -118,6 +118,10 @@ npx stylelint "**/*.{css,scss}"
 ```
 npx eslint .
 ```
+- For unit testing, run:
+```
+npm test
+```
 
 ### Deployment <a name="deployment"></a>
 
