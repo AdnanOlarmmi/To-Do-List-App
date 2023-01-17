@@ -1,5 +1,5 @@
-import renderToDoItems from './renderTasks.js';
 import toDoItemsArray from './toDoItemsArray.js';
+import updateTasksAndUi from './updateTasks.js';
 
 const checked = (itmId) => {
   const { completed } = toDoItemsArray[itmId];
@@ -10,8 +10,7 @@ const checked = (itmId) => {
     toDoItemsArray[itmId].completed = true;
   }
 
-  localStorage.setItem('toDoItemsArray', JSON.stringify(toDoItemsArray));
-  renderToDoItems();
+  updateTasksAndUi();
 };
 
 export default checked;
